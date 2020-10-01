@@ -18,7 +18,7 @@ export default {
   <footer class="footer">
     <SocialMediaBar />
     <p class="text-center">
-      © YOUR BRAND HERE {{ currentYear }}. Made with
+      © SAS-Kodzi {{ currentYear }}. Made with
       <a href="https://www.nuxtjs.org">NuxtJS</a> 💚.
     </p>
   </footer>

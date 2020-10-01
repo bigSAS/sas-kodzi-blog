@@ -1,6 +1,6 @@
-# Ben's Blog Boilerplate
+# Sas kodzi blog
 
-This project was created as a way to share the infrastructure that powers my own site, [bencodezen.io](https://www.bencodezen.io). By creating this, I hope this helps other developers to spend more time focusing on their writing while still having the power to customize things on the site as they desire without having to fuss with all the features that go into a good personal site experience.
+forked from bencodezen/bens-blog-boilerplate
 
 ## Technology Stack
 
