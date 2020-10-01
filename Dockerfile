@@ -5,10 +5,9 @@ COPY . /opt/app/
 WORKDIR /opt/app
 
 
-RUN npm install && npm run build
+RUN npm install && npm run generate
 
-# FROM nginx:1.18-alpine
+FROM nginx:1.18-alpine
 
-# COPY --from=builder /opt/app/dist /usr/share/nginx/html/
-EXPOSE 3000
-CMD [ "npm", "run", "start" ]
+COPY --from=builder /opt/app/dist /usr/share/nginx/html/
+EXPOSE 80
