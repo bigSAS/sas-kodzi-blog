@@ -12,11 +12,6 @@ export default {
           name: 'GitHub',
           url: 'https://github.com/bigSAS'
         },
-        // todo: add twitter
-        {
-          name: 'Twitter',
-          url: 'https://www.twitter.com/'
-        },
         {
           name: 'YouTube',
           url: 'https://youtube.com/channel/UCLAyO0wf5T5aABjjSl7sXUg'
