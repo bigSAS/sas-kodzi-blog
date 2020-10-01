@@ -1,0 +1,10 @@
+version: "3"
+services:
+  sas-kodzi-blog:
+    container_name: sas-kodzi-blog 
+    image: sas-kodzi-blog:latest
+    restart: always
+    build:
+      context: .
+    ports:
+      - 8080:80 

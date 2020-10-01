@@ -9,14 +9,14 @@ export default {
   },
   computed: {
     formatPublishDate() {
-      const dateFormat = new Date(this.post.published)
+      const dateFormat = new Date(this.post.date)
       const options = {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
       }
 
-      return dateFormat.toLocaleDateString('en-US', options)
+      return dateFormat.toLocaleDateString('pl-EU', options)
     }
   }
 }
@@ -30,7 +30,7 @@ export default {
     </h2>
     <p v-if="post.excerpt" class="blog-post__excerpt">{{ post.excerpt }}</p>
     <nuxt-link class="button blog-post__button " :to="post.path">
-      Read More >
+      Czytaj dalej >
     </nuxt-link>
   </section>
 </template>

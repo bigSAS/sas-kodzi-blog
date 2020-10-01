@@ -13,10 +13,10 @@ export default {
     <div>
       <logo class="mt-20" />
       <h1 class="title">
-        Your Brand
+        SAS-Kodzi
       </h1>
-      <p class="subtitle">Not your average blog boilerplate!</p>
-      <nuxt-link to="/learn" class="button">Call to Action!</nuxt-link>
+      <p class="subtitle">Not your average automation tester :)</p>
+      <nuxt-link to="/blog" class="button">Blog</nuxt-link>
     </div>
   </div>
 </template>

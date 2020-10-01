@@ -1,5 +1,5 @@
 <template>
-  <img src="~/assets/avatar.png" alt="Your Logo" :class="$style.logo" />
+  <img src="~/assets/sas-avatar.jpg" alt="Your Logo" :class="$style.logo" />
 </template>
 
 <style lang="scss" module>

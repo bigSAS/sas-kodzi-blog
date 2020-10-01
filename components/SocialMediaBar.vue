@@ -9,20 +9,17 @@ export default {
     return {
       accounts: [
         {
+          name: 'GitHub',
+          url: 'https://github.com/bigSAS'
+        },
+        // todo: add twitter
+        {
           name: 'Twitter',
           url: 'https://www.twitter.com/'
         },
         {
-          name: 'GitHub',
-          url: 'https://www.github.com/'
-        },
-        {
           name: 'YouTube',
-          url: 'https://www.youtube.com/'
-        },
-        {
-          name: 'Twitch',
-          url: 'https://www.twitch.tv/'
+          url: 'https://youtube.com/channel/UCLAyO0wf5T5aABjjSl7sXUg'
         }
       ]
     }
