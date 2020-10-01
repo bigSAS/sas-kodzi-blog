@@ -15,7 +15,7 @@ export default {
       <h1 class="title">
         SAS-Kodzi
       </h1>
-      <p class="subtitle">Not your average automation tester :)</p>
+      <p class="subtitle">Not your average automation tester 😎🤖🤯</p>
       <nuxt-link to="/blog" class="button">Blog</nuxt-link>
     </div>
   </div>
