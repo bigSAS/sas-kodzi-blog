@@ -1,6 +1,7 @@
 ---
 title: Once you go Python you never go back
 date: 2020-10-01
+when: 1 październik 2020
 excerpt: Jak ułatwić sobie życie testerskie używając python + pytest
 ---
 

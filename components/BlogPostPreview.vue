@@ -9,14 +9,15 @@ export default {
   },
   computed: {
     formatPublishDate() {
-      const dateFormat = new Date(this.post.date)
-      const options = {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      }
+      return this.post.when
+      // const dateFormat = new Date(this.post.date)
+      // const options = {
+      //   year: 'numeric',
+      //   month: 'long',
+      //   day: 'numeric'
+      // }
 
-      return dateFormat.toLocaleDateString('pl-EU', options)
+      // return dateFormat.toLocaleDateString('pl-EU', options)
     }
   }
 }
