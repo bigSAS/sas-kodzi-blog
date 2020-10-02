@@ -1,8 +1,8 @@
 {
   "name": "sas-kodzi",
   "version": "1.0.0",
-  "description": "My website",
-  "author": "Ben Hong",
+  "description": "SAS-Kodzi",
+  "author": "Tomasz Majk sas.it.tomasz.majk@gmail.com",
   "license": "MIT",
   "private": true,
   "scripts": {
