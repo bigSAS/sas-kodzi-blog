@@ -41,7 +41,7 @@ Uruchamiamy go poprzez:
 Hi there!
 ```
 
-`if __name__ == "__main__":` to konwenja main funkcji programu w wydaniu python'a, o tym innym razem 😉.  
+`if __name__ == "__main__":` to konwencja main funkcji programu w wydaniu python'a, o tym innym razem 😉.  
 Żadnego sdk, kompilowania, deklarowania klas/funkcji itd, poprostu działa 🤯.  
 **Fun fact**: Możemy "bawić" się pythonem poprzez interactive terminal poprostu go uruchamiając czyli:  
 
