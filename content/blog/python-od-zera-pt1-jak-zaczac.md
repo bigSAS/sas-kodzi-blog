@@ -59,7 +59,7 @@ Bardzo przydatne jeśli chcemy coś poprostu policzyć/sprawdzić etc.
 ## Instalacja python'a
 
 Aby zainstalować python, należy ze strony **[www.python.org/downloads/](https://www.python.org/downloads/)** pobrać dystrybucję na posiadany system operacyjny i zainstalować jak każdą inną aplikację na komputerze 🤖.  
-**Hint**: Podczas instalacji (Windows) warto pamiętać aby zaznaczyć checkbox "**add python to PATH**" - pozwoli to używać pythona poprzez komendę **python** w cmd/shellu 😊  
+**Hint**: Podczas instalacji (Windows) warto pamiętać aby zaznaczyć checkbox "**add python to PATH**" - pozwoli to używać pythona poprzez komendę **python** w cmd/sh 😊  
 Jeśli przeoczymy ten krok, zawsze można dodać folder z **python.exe** do PATH ręcznie (google pomoże 😁)
 
 Aby sprawdzić czy python zainstallował nam się poprawnie w cmd możemy wpisać:  

@@ -1,6 +1,6 @@
 ---
 title: Python venv 1on1
-tags: python,venv
+tags: python,venv,development
 difficulty: 2
 date: 2020-09-30
 when: 30 września 2020
