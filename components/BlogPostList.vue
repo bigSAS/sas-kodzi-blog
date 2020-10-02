@@ -30,17 +30,23 @@ export default {
             .filter((item) => {
               const isBlogPost = item.path.includes('/blog/')
               const isReadyToPublish = new Date(item.date) <= new Date()
-              const hasTags = item.tags && item.tags.includes(this.selectedTag)
+              const hasTags = item.tags && item.tags.includes(this.selectedTag) // todo: ograc to
+              const hidePost = item.hide === 'yes'
 
               const shouldPublish = this.selectedTag
                 ? isBlogPost && isReadyToPublish && hasTags
                 : isBlogPost && isReadyToPublish
 
-              if (shouldPublish) {
+              if (shouldPublish && !hidePost) {
                 return item
               }
             })
-            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .sort((a, b) => {
+              // console.log('a', new Date(a.date))
+              // console.log('b', new Date(b.date))
+              // console.log(new Date(b.date) - new Date(a.date))
+              return new Date(b.date) - new Date(a.date)
+            })
         }
       }
 

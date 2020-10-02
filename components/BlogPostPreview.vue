@@ -8,16 +8,8 @@ export default {
     }
   },
   computed: {
-    formatPublishDate() {
-      return this.post.when
-      // const dateFormat = new Date(this.post.date)
-      // const options = {
-      //   year: 'numeric',
-      //   month: 'long',
-      //   day: 'numeric'
-      // }
-
-      // return dateFormat.toLocaleDateString('pl-EU', options)
+    tags: function(){
+      return this.post.tags ? this.post.tags.split(',') : []
     }
   }
 }
@@ -25,7 +17,11 @@ export default {
 
 <template>
   <section class="blog-post">
-    <time class="blog-post__time">{{ formatPublishDate }}</time>
+    <time class="blog-post__time">{{ post.when }}</time>
+    <!-- todo: difficulty component -->
+    <h5 class="text-left">Poziom trudności: {{ post.difficulty }}/5</h5>
+    <!-- todo: tag component -->
+    <h5 class="text-right">{{ tags }}</h5>
     <h2 class="blog-post__title">
       <a :href="post.path" class="blog-post__link">{{ post.title }}</a>
     </h2>

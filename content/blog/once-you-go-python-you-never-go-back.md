@@ -1,12 +1,15 @@
 ---
 title: Once you go Python you never go back
+tags: python,pytest
+difficulty: 3
 date: 2020-10-01
-when: 1 październik 2020
+when: 1 października 2020
 excerpt: Jak ułatwić sobie życie testerskie używając python + pytest
+hide: yes
 ---
 
 <p align="center">
-  <img src="/python.jpg" width="500" style="box-shadow: 5px 5px 10px 5px rgba(81, 81, 81, .3); border-style: solid; border-width: 1px; border-color: grey;" />
+  <img src="/img/onceugo/main.png" width="500" style="box-shadow: 5px 5px 10px 5px rgba(81, 81, 81, .3); border-style: solid; border-width: 1px; border-color: grey;" />
 </p>
 
 ```python

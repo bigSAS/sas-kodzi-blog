@@ -12,7 +12,7 @@ export default {}
       >
         <img
           class="navbar-logo-image"
-          src="~/assets/sas-avatar.jpg"
+          src="/img/avatar.jpg"
           alt="Sas Kodzi"
         />
         SAS-Kodzi
