@@ -10,7 +10,7 @@ hide: no
 
 Zakładam, że masz zainstalowany python na komputerze globalnie i potrafisz z niego korzystać na poziomie postawowym 🖖  
 
-We wsółczesnym świecie programowania pisanie wszystkiego "od zera" nie jest zbyt efektywne. Przeważnie okazuje się, że problem, z którym się zmagasz został już przez kogoś rozwiązany i możesz po niego sięgnąc z **[pypi.org](https://pypi.org/)** czyli Python Package Index.  Biblioteki są utrzymywane i rozwijane, co za tym idzie wersjonowane. Niestety posiadanie różnych wersji pakietów/bibliotek w obrębie jednego systemu operacyjnego nie jest dobrym pomysłem 😵.  
+We współczesnym świecie programowania pisanie wszystkiego "od zera" nie jest zbyt efektywne. Przeważnie okazuje się, że problem, z którym się zmagasz został już przez kogoś rozwiązany i możesz po niego sięgnąc z **[pypi.org](https://pypi.org/)** czyli Python Package Index.  Biblioteki są utrzymywane i rozwijane, co za tym idzie wersjonowane. Niestety posiadanie różnych wersji pakietów/bibliotek w obrębie jednego systemu operacyjnego nie jest dobrym pomysłem 😵.  
 
 Za dobrą praktykę uznawane jest zakładanie **wirtualnych środowisk python'a** na potrzeby projektu/repozytorium. Na nasze szczęście python 3+ posiada wbudowany moduł, który w prosty sposób umożliwia te zagadnienie rozwiązać. Moduł o nazwie **venv**.  
 
