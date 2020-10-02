@@ -42,9 +42,6 @@ export default {
               }
             })
             .sort((a, b) => {
-              // console.log('a', new Date(a.date))
-              // console.log('b', new Date(b.date))
-              // console.log(new Date(b.date) - new Date(a.date))
               return new Date(b.date) - new Date(a.date)
             })
         }
