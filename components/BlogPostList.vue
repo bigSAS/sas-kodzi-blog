@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       displayRange: {
-        end: 4
+        end: 10
       },
       selectedTag: ''
     }
@@ -67,7 +67,7 @@ export default {
       <h1 class="blog-list-title">Posty</h1>
     </div>
 
-    <h2 class="blog-list-subtitle">Ostatnie</h2>
+    <!-- <h2 class="blog-list-subtitle">Ostatnie</h2> -->
 
     <ul class="blog-list">
       <li
@@ -85,7 +85,7 @@ export default {
 
     <div v-if="displayRange.end <= filteredList.length" class="pagination">
       <button class="button--load-more" type="button" @click="loadMore">
-        Load More
+        Wczytaj więcej
       </button>
     </div>
   </div>

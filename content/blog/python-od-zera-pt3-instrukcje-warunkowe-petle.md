@@ -1,5 +1,5 @@
 ---
-title: Python od zera pt3 - instrukcje warunkowe i pętle
+title: Python od zera część 3 - instrukcje warunkowe i pętle
 tags: python,learn
 difficulty: 2
 date: 2020-10-03

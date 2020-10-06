@@ -1,5 +1,5 @@
 ---
-title: Python od zera pt1 - jak zacząć ?
+title: Python od zera część 1 - jak zacząć ?
 tags: python,learn
 difficulty: 1
 date: 2020-10-02
@@ -8,7 +8,7 @@ excerpt: Jak rozpocząć przygodę z programowaniem w Python'ie
 hide: no
 ---
 Chciałbyś rozpocząć przygodę z programowaniem, ale nie wiesz jaki język wybrać, od czego zacząć? Jesteś przytłoczony informacjami z internetu, zagubiony 🥺😵? Być może, szukasz alternatywnego języka programowania aby uniknąc statycznego typowania i "ceremonii", chcesz mieć więcej elastyczności w implementacji?  
-Mam nadzieję, że uda mi się cie przekonać do python'a języka, który pokochały miliony ludzi i obecnie jest nr 2 językiem używanym przez programistów wg statystyk na GitHub'ie 🥳  
+Mam nadzieję, że uda mi się cie przekonać do python'a - języka, który pokochały miliony ludzi i obecnie jest nr 2 językiem używanym przez programistów wg statystyk na GitHub'ie 🥳  
 
 ## Dlaczego python ?
 

@@ -4,7 +4,7 @@ tags: python,venv,development
 difficulty: 2
 date: 2020-09-30
 when: 30 września 2020
-excerpt: Virtualne środowisko oraz dlaczego powinieneś go używać
+excerpt: Wirtualne środowisko oraz dlaczego powinieneś go używać
 hide: no
 ---
 

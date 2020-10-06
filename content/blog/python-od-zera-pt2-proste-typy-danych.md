@@ -1,5 +1,5 @@
 ---
-title: Python od zera pt2 - proste typy danych
+title: Python od zera część 2 - proste typy danych
 tags: python,learn
 difficulty: 2
 date: 2020-10-03

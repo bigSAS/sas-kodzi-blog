@@ -21,13 +21,13 @@ export default {
     <!-- todo: difficulty component -->
     <h5 class="text-left">Poziom trudności: {{ post.difficulty }}/5</h5>
     <!-- todo: tag component -->
-    <h5 class="text-right">{{ tags }}</h5>
+    <!-- <h5 class="text-right">{{ tags }}</h5> -->
     <h2 class="blog-post__title">
       <a :href="post.path" class="blog-post__link">{{ post.title }}</a>
     </h2>
     <p v-if="post.excerpt" class="blog-post__excerpt">{{ post.excerpt }}</p>
     <nuxt-link class="button blog-post__button " :to="post.path">
-      Czytaj dalej >
+      Czytaj >
     </nuxt-link>
   </section>
 </template>
