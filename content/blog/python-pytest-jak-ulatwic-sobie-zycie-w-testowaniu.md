@@ -42,7 +42,7 @@ W tym artykule używać będziemy go jako programu 🤖.
 
 ## Pierwsze testy (mini projekt)
 
-Ok tworzymy nowy folder **pytest-fun**. Poczym robimy venv'a i instalujemy pytest.  
+OK tworzymy nowy folder **pytest-fun**. Poczym robimy venv'a i instalujemy pytest.  
 
 ```sh
 > mkdir pytest-fun
@@ -61,7 +61,7 @@ Tworzymy także dwa foldery, jeden będzie pakietem, drugi poprostu folderem na 
 (env) pytest-fun/libs> echo "" > __init__.py
 ```
 
-Ok możemy otworzyć projekt w jakimś edytorze aby ułatwić sobie pracę. W moim przypadku to **vscode**.
+OK możemy otworzyć projekt w jakimś edytorze aby ułatwić sobie pracę. W moim przypadku to **vscode**.
 Struktura folderów powinna być następująca:  
 
 ```sh
@@ -295,7 +295,7 @@ Jest to prosty, a zarazem bardzo potężny mechanizm, który warto znać i nale�
 
 ## Parametryzacja iteracji
 
-Ok testy, które zrobiliśmy nie są może skomplikowane, ale na pewno jest ich za mało. Mam na myśli za mało iteracji, nie za mało definicji. Co w przypadku jeśli chciałbym nasz test dodawania przepuścić przez większą ilość danych testowych. Oczywiście nie chcę powielać testu i robić bałaganu w projekcie 👀  
+OK testy, które zrobiliśmy nie są może skomplikowane, ale na pewno jest ich za mało. Mam na myśli za mało iteracji, nie za mało definicji. Co w przypadku jeśli chciałbym nasz test dodawania przepuścić przez większą ilość danych testowych. Oczywiście nie chcę powielać testu i robić bałaganu w projekcie 👀  
 Otóż mamy do dyspozycji jeden z wbudowanych markerów **@pytest.mark.parametrize(argnames, argvalues)** (btw mogłeś go zauważyć przy listowaniu markerów z cmd). Pozwala on w "magiczny" sposób przekazywać parametry do naszej funkcji testowej. Refaktornijmy więc nasz test dodawania 🤏  
 
 ```python
@@ -356,6 +356,6 @@ Fun fun stuff 🤙
 
 ## Podsumowanie
 
-Ok dzisiaj poznałeś pytest i jak z niego korzystać w sposób podstawowy, a za razem właściwy. Oczywiście gorąco zachęcam do poczytania dokumentacji, jest naprawde przystępna nawet dla początkucjących 🙃.  
+OK dzisiaj poznałeś pytest i jak z niego korzystać w sposób podstawowy, a za razem właściwy. Oczywiście gorąco zachęcam do poczytania dokumentacji, jest naprawde przystępna nawet dla początkucjących 🙃.  
 
 Link do projektu: [**https://github.com/bigSAS/python-pytest-example-unit-testing**](https://github.com/bigSAS/python-pytest-example-unit-testing)  
