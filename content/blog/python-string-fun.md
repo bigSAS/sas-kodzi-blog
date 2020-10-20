@@ -1,6 +1,6 @@
 ---
 title: Python string FUN
-tags: python,learn
+tags: [python, learn]
 difficulty: 2
 date: 2020-10-04
 when: 04 października 2020

@@ -1,6 +1,6 @@
 ---
 title: Python od zera część 2 - proste typy danych
-tags: python,learn
+tags: [python, learn]
 difficulty: 2
 date: 2020-10-03
 when: 03 października 2020

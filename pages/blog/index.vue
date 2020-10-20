@@ -8,14 +8,27 @@ export default {
     BlogPostFilters
   },
   async asyncData({ $content, query }) {
-    const tags = query.tags ? query.tags.split(',') : []
+    const queryTags = query.tags ? query.tags.split(',') : []
+    const allTagedDocs = await $content('blog')
+      .where({ hide: { $eq: "no" } })
+      .only(['tags']).fetch()
+    const allTags = []
+    for (let taggedDoc of allTagedDocs) {
+      for (let tag of taggedDoc.tags) {
+        if (allTags.indexOf(tag) === -1) {
+          allTags.push(tag)
+        }
+      }
+    }
     const posts = await $content('blog')
-      .where({ hide: { $eq: "no" }, tags: { $contains: tags } })
+      .where({ hide: { $eq: "no" }, tags: { $contains: queryTags } })
       .sortBy('date', 'desc')
       .fetch()
 
     return {
-      posts
+      posts,
+      allTags,
+      queryTags
     }
   }
 }
@@ -23,7 +36,7 @@ export default {
 
 <template>
   <div class="content">
-    <BlogPostFilters :tags="['foo', 'bar', 'baz']" />
+    <!-- <BlogPostFilters :tags="allTags" :applied-tags="queryTags" /> -->
     <BlogPostList :posts="posts" />
   </div>
 </template>

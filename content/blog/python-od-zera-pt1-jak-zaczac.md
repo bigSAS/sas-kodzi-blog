@@ -1,6 +1,6 @@
 ---
 title: Python od zera część 1 - jak zacząć ?
-tags: python,learn
+tags: [python, learn]
 difficulty: 1
 date: 2020-10-02
 when: 02 października 2020

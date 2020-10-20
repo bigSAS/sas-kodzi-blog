@@ -1,6 +1,6 @@
 ---
 title: Python + pytest - czyli jak ułatwić sobie życie w testowaniu
-tags: python,pytest,testing
+tags: [python, pytest, testing]
 difficulty: 2
 date: 2020-10-14
 when: 14 października 2020
