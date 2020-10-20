@@ -1,12 +1,18 @@
 <script>
 import BlogPostList from '~/components/BlogPostList'
+import BlogPostFilters from '~/components/BlogPostFilters'
 
 export default {
   components: {
-    BlogPostList
+    BlogPostList,
+    BlogPostFilters
   },
-  async asyncData({ $content }) {
-    const posts = await $content('blog').fetch()
+  async asyncData({ $content, query }) {
+    const tags = query.tags ? query.tags.split(',') : []
+    const posts = await $content('blog')
+      .where({ hide: { $eq: "no" }, tags: { $contains: tags } })
+      .sortBy('date', 'desc')
+      .fetch()
 
     return {
       posts
@@ -17,7 +23,8 @@ export default {
 
 <template>
   <div class="content">
-    <BlogPostList :list="posts" />
+    <BlogPostFilters :tags="['foo', 'bar', 'baz']" />
+    <BlogPostList :posts="posts" />
   </div>
 </template>
 

@@ -7,7 +7,7 @@ export default {
     BlogPostPreview
   },
   props: {
-    list: {
+    posts: {
       type: Array,
       default: () => []
     }
@@ -18,36 +18,6 @@ export default {
         end: 10
       },
       selectedTag: ''
-    }
-  },
-  computed: {
-    filteredList() {
-      const props = this.$options.propsData
-
-      if (props) {
-        if (props.list && props.list.length > 0) {
-          return props.list
-            .filter((item) => {
-              const isBlogPost = item.path.includes('/blog/')
-              const isReadyToPublish = new Date(item.date) <= new Date()
-              const hasTags = item.tags && item.tags.includes(this.selectedTag) // todo: ograc to
-              const hidePost = item.hide === 'yes'
-
-              const shouldPublish = this.selectedTag
-                ? isBlogPost && isReadyToPublish && hasTags
-                : isBlogPost && isReadyToPublish
-
-              if (shouldPublish && !hidePost) {
-                return item
-              }
-            })
-            .sort((a, b) => {
-              return new Date(b.date) - new Date(a.date)
-            })
-        }
-      }
-
-      return false
     }
   },
   methods: {
@@ -71,7 +41,7 @@ export default {
 
     <ul class="blog-list">
       <li
-        v-for="(item, index) in filteredList"
+        v-for="(item, index) in posts"
         :key="`blog-post-${index}`"
         class="blog-list__item"
       >
@@ -83,7 +53,7 @@ export default {
       </li>
     </ul>
 
-    <div v-if="displayRange.end <= filteredList.length" class="pagination">
+    <div v-if="displayRange.end <= posts.length" class="pagination">
       <button class="button--load-more" type="button" @click="loadMore">
         Wczytaj więcej
       </button>
