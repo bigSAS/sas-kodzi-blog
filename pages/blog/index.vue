@@ -13,13 +13,13 @@ export default {
       .where({ hide: { $eq: "no" } })
       .only(['tags']).fetch()
     const allTags = []
-    for (let taggedDoc of allTagedDocs) {
-      for (let tag of taggedDoc.tags) {
+    allTagedDocs.forEach(doc => {
+      doc.tags.forEach(tag => {
         if (allTags.indexOf(tag) === -1) {
           allTags.push(tag)
         }
-      }
-    }
+      })
+    })
     const posts = await $content('blog')
       .where({ hide: { $eq: "no" }, tags: { $contains: queryTags } })
       .sortBy('date', 'desc')
