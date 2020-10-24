@@ -47,7 +47,8 @@ $primary-color: #22aaff;
 .blog-post__excerpt {
   margin-top: 0;
   @apply mb-3;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .blog-post__link {
