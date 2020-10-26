@@ -23,9 +23,6 @@ export default {
   methods: {
     loadMore() {
       this.displayRange.end += 5
-    },
-    updateSelectedTag(tag) {
-      this.selectedTag = tag
     }
   }
 }
@@ -48,7 +45,6 @@ export default {
         <BlogPostPreview
           v-show="index <= displayRange.end"
           :post="item"
-          @updateSelectedTag="updateSelectedTag"
         />
       </li>
     </ul>
