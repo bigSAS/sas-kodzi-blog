@@ -5,13 +5,13 @@ difficulty: 2
 date: 2020-10-25
 when: 25 października 2020
 excerpt: Kodzenie na słownikach, z użyciem praktycznych przykładów 🤏
-hide: yes
+hide: no
 ---
 
-## Czym jest dict aka słownik aka hashmap'a?
+## Co to jest dict?
 
-Typ **dict** nie jest już prymitywnym typem danych. Na początku może wydawać się enigmatyczny, natomiast w praktyce jest świetny do pracy z kodem. Dodatkowo cały python oparty jest o słowniki, co za tym idzie -> warto z nich korzystać :) 
-Sam słownik to mapa kluczy, które są wskaźnikiem do wartości do tych właśnie kluczy przypisanych.
+Typ **dict** (słownik) nie jest już prymitywnym typem danych. Na początku może wydawać się enigmatyczny, natomiast w praktyce jest świetny do pracy z kodem. Dodatkowo cały python oparty jest o słowniki, co za tym idzie 👉 **warto** z nich korzystać 🙂  
+Sam słownik to mapa kluczy: wartości. Wartości przechowywane w słowniku mają swoje klucze (**unikalne**).
 Czyli mogę sobie powiedzieć np, że mam słownik dla państw. Kluczami będą dwu-literowe kody, natomiast wartościamy pełne nazwy.
 
 ```python
@@ -22,9 +22,9 @@ countries = {
 }
 ```
 
-Słownik definiujemy w klamrach aka **curly brackets**. Elementy słownika oddzielamy przecinkami, natomiast klucze i wartości (key: value) dwukropkiem. Jeśli znasz taki format danych jak JSON to wygląda bardzo znajomo prawda? Ale o tym później :)
+Słownik definiujemy w klamrach aka **curly brackets**. Elementy słownika oddzielamy przecinkami, natomiast klucze i wartości (key: value) dwukropkiem. Jeśli znasz taki format danych jak JSON to wygląda bardzo znajomo prawda? Ale o tym później 😉.
 
-Pusty słownik możemy zadeklarować na dwa sposoby  
+Pusty słownik możemy zadeklarować na dwa sposoby.  
 
 ```python
 # curly brackets
@@ -33,7 +33,7 @@ mydict = {}
 myotherdict = dict()
 ```
 
-**Klucz zawsze jest string'iem, natomiast wartość może być dowolnego typu (np str, int, bool itd albo kolejnym słownikiem). Ogólnie dowolnym typem danych**  
+**Klucz zawsze jest string'iem, natomiast wartość może być dowolnego typu (np str, int, bool itd albo kolejnym słownikiem). Ogólnie dowolnym typem danych.**  
 
 ```python
 jimmy = {
@@ -47,7 +47,7 @@ jimmy = {
 }
 ```
 
-Fun stuff :)
+Fun stuff 👌
 Jak widać słownik może przechowywać zarówno płaskie jak i zagnieżdzone struktury.  
 
 ## Operacje na słowniku
@@ -56,122 +56,144 @@ OK fajnie to wygląda, ale jak takim słownikiem operować? Na szczęście dict 
 
 ### Odczyt po kluczu
 
-Podstawowym sposobem odczytania danych jest podanie klucza w nawiasach kwadratowych  
+Podstawowym sposobem odczytania danych jest podanie klucza w nawiasach kwadratowych.  
 
 ```python
 print(jimmy['last_name'])
->>> 'choo'
+'choo'
 # możesz zagnieżdżać klucze jeśli wartość jest kolejnym słownikiem
 print(jimmy['address']['street'])
->>> 'sezamee street'
+'sezamee street'
 ```
 
-Jeśli podamy niepoprawny klucz otrzymamy **KeyError**  
+Jeśli podamy niepoprawny klucz otrzymamy **KeyError**.  
 
 ```python
 print(jimmy['birthdate'])
->>> KeyError ...  
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'birthdate'  
 
 ```
 
 ### Odczyt z użyciem metody get
 
 ```python
-print(jimmy.get('last_name')
->>> 'choo'
+print(jimmy.get('last_name'))
+'choo'
 ```
 
-Jeśli np nie jesteśmy pewni, czy słownik posiada dany klucz, jako drugi parametr do get możemy podać wartość, która ma być zwrócona jeśli klucz nie zostanie znaleziony  
+Jeśli np nie jesteśmy pewni, czy słownik posiada dany klucz, jako drugi parametr do get możemy podać wartość, która ma być zwrócona jeśli klucz nie zostanie znaleziony.  
 
 ```python
-print(jimmy.get('height', 180)
->>> 180
+print(jimmy.get('height', 180))
+180
 ```
 
-Pozwala to uniknąć zbędnej obsługi błędów w naszym programie, jeśli np możemy przyjąć jakąś defaultową wartość :)  
+Pozwala to uniknąć zbędnej obsługi błędów w naszym programie, jeśli np możemy przyjąć jakąś domyślną wartość 🖖.  
 
 ### Dodanie nowego klucza: wartości
 
-Analogicznie do odczytu używamy nawiasów kwadratowych  
+Analogicznie do odczytu używamy nawiasów kwadratowych.  
 
 ```python
 jimmy['birthdate'] = '01-01-1999'
 print(jimmy['birthdate'])
->>> '01-01-1999'
+'01-01-1999'
 ```
 
-**Musisz pamiętać, że jeśli klucz już istnieje to wartość zostanie nadpisana. Czyli nadpisywanie wartości po kluczu odbywa się identycznie jak dodawanie nowych**  
+**Musisz pamiętać, że jeśli klucz już istnieje to wartość zostanie nadpisana. Czyli nadpisywanie wartości po kluczu odbywa się identycznie jak dodawanie nowych.**  
 
 ### Usunięcie klucza (wraz z wartością)
 
-Możesz zdjąć element ze słownika metodą **pop**  
+Możesz zdjąć element ze słownika metodą **pop**.  
 
 ```python
 jimmys_age = jimmy.pop('age')
 print(jimmys_age)
->>> 33
+33
+
+# słownik nie ma już klucza 'age'
 jimmy['age']
->>> KeyError ...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'age'
 ```
 
-Ewentualnie poprostu usunąć  
+Ewentualnie poprostu usunąć.  
 
 ```python
 del jimmy['first_name']
 print(jimmy['first_name'])
->>> KeyError ...
-
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'first_name'
 ```
-### Lista (set) kluczy
 
-Klucze jako set (klucze są unikalne) **potwierdzic to!** stringów możesz odczytać za pomocą metody **keys**
+### Klucze
+
+Klucze możesz odczytać za pomocą metody **keys**.
 
 ```python
 print(jimmy.keys())
->>> ['last_name', ..., 'birthdate']
+dict_keys(['last_name', 'address', 'birthdate'])
 ```
 
-Co za tym idzie możesz w prosty sposób sprawdzić czy słownik posiada klucz
+Co za tym idzie możesz w prosty sposób sprawdzić czy słownik posiada klucz.
 
 ```python
 print('birthdate'in jimmy.keys())
->>> True
+True
 print('hobby'in jimmy.keys())
->>> False
+False
 ```
 
-### Lista elementów
+### Elementy
 
-Elementy słownika możesz odczytac za pomocą metody **items**
+Elementy słownika możesz odczytac za pomocą metody **items**.
 
 ```python
 print(jimmy.items())
->>> ...
+dict_items([('last_name', 'choo'), ('address', {'street': 'sezamee street', 'building': 999}), ('birthdate', '01-01-1999')])
 ```
 
-**Możesz w bardzo prosty sposób iterować się po elementach słownika**
+**Możesz w bardzo prosty sposób iterować się po elementach słownika.**
 
 ```python
 for key, value in jimmy.items():
     print(f'{key} -> {value}')
->>> ...
+last_name -> choo
+address -> {'street': 'sezamee street', 'building': 999}
+birthdate -> 01-01-1999
 ```
 
-Z racji tego, że element słownika to tuple'a z dwoma elementami, możemy je od razu rozpakować do dwóch zmiennych w pętli for :) cool :)
+Z racji tego, że element słownika to tuple'a z dwoma elementami, możemy je od razu rozpakować do dwóch zmiennych w pętli for. Cool 🙂.
 
 ### Złączenie (merge'owanie) słowników
 
-Możesz łączyć słowniki ze sobą
+Możesz łączyć słowniki ze sobą. Najprostszy sposób to rozpakować dwa słowniki do nowego.
 
 ```python
-# todo
+dict_one = {'foo': 1, 'bar': 2}
+dict_two = {'baz': 3}
+dict_three = {**dict_one, **dict_two}
+print(dict_three)
+{'foo': 1, 'bar': 2, 'baz': 3}
 ```
 
-... info dla tych samych kluczy -> sa nadpisywane z prawej na lewo
+**🧠 Jeśli słowniki posiadają te same klucze, wtedy wartości 'z prawej' nadpisują wartości 'z lewej'.**
+
+```python
+dict_one = {'foo': 1, 'bar': 2}
+dict_two = {'baz': 3, 'bar': 4}
+dict_three = {**dict_one, **dict_two}
+print(dict_three)
+{'foo': 1, 'bar': 4, 'baz': 3}
+```
 
 ## Praktyczne zastosowanie
 
-Python pozwala na przyjemne i zarazem praktyczne zastosowanie słowników. Dodatkowo oszczędzenie sobie ceremoniałów, które często występują w innych, przeważnie statycznie typowanych językach ;)
+Python pozwala na przyjemne i zarazem praktyczne zastosowanie słowników. Dodatkowo oszczędzenie sobie ceremoniałów, które często występują w innych, przeważnie statycznie typowanych językach 🙃.
 
 ### Zapisanie danych z dict'a do JSON'a
 
@@ -182,7 +204,7 @@ import json
 
 jimmy_json = json.dumps(jimmy)
 print(jimmy_json)
->>> ...
+{"last_name": "choo", "address": {"street": "sezamee street", "building": 999}, "birthdate": "01-01-1999"}
 ```
 
 ### Odczyt danych z JSON string'a do dict'a
@@ -203,14 +225,14 @@ shoes_json = '''
 ]
 '''
 shoes = json.loads(shoes_json)
-print(shoes[0].get('model')
->>> 'jordan zeros'
+print(shoes[0].get('model'))
+'jordan zeros'
 ```
 
-Jak możesz się domyśleć ma to wiele praktycznego zastosowania przy przetwarzaniu danych w JSON (również innych formatów danych) jako słownik
-Cool ! :)
+Jak możesz się domyśleć ma to wiele praktycznego zastosowania przy przetwarzaniu danych w JSON (również innych formatów danych) jako słownik.
+Cool stuff! 🤖
 
 ## Podsumowanie
 
-Gratulacje! Dzisiaj dowiedziałeś się jak używać słowników, oraz stosować je w praktyce do pracy z danymi:)
-Jeśli intersuje cię bardziej tematyka słowników polecam talk Raymond'a Hettinger'a na temat słowników -> https:...
+Gratulacje! Dzisiaj dowiedziałeś się jak używać słowników, oraz stosować je w praktyce do pracy z danymi ☝️
+Jeśli intersuje cię bardziej tematyka słowników polecam talk Raymond'a Hettinger'a na temat słowników **👉 [Modern Dictionaries by Raymond Hettinger](https://www.youtube.com/watch?v=p33CVV29OG8)**  
