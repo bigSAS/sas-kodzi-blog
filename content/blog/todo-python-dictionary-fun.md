@@ -1,11 +1,11 @@
 ---
 title: Python dictionary FUN
 tags: [python, learn]
-difficulty: 3
+difficulty: 2
 date: 2020-10-25
 when: 25 października 2020
 excerpt: Kodzenie na słownikach, z użyciem praktycznych przykładów 🤏
-hide: no
+hide: yes
 ---
 
 ## Czym jest dict aka słownik aka hashmap'a?
@@ -15,7 +15,7 @@ Sam słownik to mapa kluczy, które są wskaźnikiem do wartości do tych właś
 Czyli mogę sobie powiedzieć np, że mam słownik dla państw. Kluczami będą dwu-literowe kody, natomiast wartościamy pełne nazwy.
 
 ```python
-conuntries = {
+countries = {
     'PL': 'Poland',
     'EN': 'England',
     'FR': 'France'
