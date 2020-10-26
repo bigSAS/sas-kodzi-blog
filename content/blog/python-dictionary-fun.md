@@ -5,7 +5,7 @@ difficulty: 2
 date: 2020-10-25
 when: 25 października 2020
 excerpt: Kodzenie na słownikach, z użyciem praktycznych przykładów 🤏
-hide: no
+hide: yes
 ---
 
 ## Czym jest dict aka słownik aka hashmap'a?
