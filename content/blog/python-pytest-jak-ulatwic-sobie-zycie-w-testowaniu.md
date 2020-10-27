@@ -8,7 +8,7 @@ excerpt: Testy jednostkowe, oraz jak je implementować z użyciem python + pytes
 hide: no
 ---
 
-![](/img/onceugo/main.png)  
+![python + pytest](/img/onceugo/main.png)  
 
 ## Dlaczego pytest ?
 

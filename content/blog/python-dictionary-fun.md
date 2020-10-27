@@ -11,8 +11,8 @@ hide: no
 ## Co to jest dict?
 
 Typ **dict** (słownik) nie jest już prymitywnym typem danych. Na początku może wydawać się enigmatyczny, natomiast w praktyce jest świetny do pracy z kodem. Dodatkowo cały python oparty jest o słowniki, co za tym idzie 👉 **warto** z nich korzystać 🙂  
-Sam słownik to mapa kluczy: wartości. Wartości przechowywane w słowniku mają swoje klucze (**unikalne**).
-Czyli mogę sobie powiedzieć np, że mam słownik dla państw. Kluczami będą dwu-literowe kody, natomiast wartościamy pełne nazwy.
+Sam słownik to mapa kluczy: wartości. Wartości przechowywane w słowniku posiadają swoje klucze (**unikalne**).
+Czyli mogę sobie zdefiniować np. słownik dla państw. Kluczami będą dwu-literowe kody, natomiast wartościamy pełne nazwy.
 
 ```python
 countries = {
@@ -22,7 +22,7 @@ countries = {
 }
 ```
 
-Słownik definiujemy w klamrach aka **curly brackets**. Elementy słownika oddzielamy przecinkami, natomiast klucze i wartości (key: value) dwukropkiem. Jeśli znasz taki format danych jak JSON to wygląda bardzo znajomo prawda? Ale o tym później 😉.
+Słownik definiujemy w klamrach a.k.a **curly brackets**. Elementy słownika oddzielamy przecinkami, natomiast klucze i wartości (key: value) dwukropkiem. Jeśli znasz taki format danych jak JSON to wygląda bardzo znajomo prawda? Ale o tym później 😉.
 
 Pusty słownik możemy zadeklarować na dwa sposoby.  
 
@@ -83,7 +83,7 @@ print(jimmy.get('last_name'))
 'choo'
 ```
 
-Jeśli np nie jesteśmy pewni, czy słownik posiada dany klucz, jako drugi parametr do get możemy podać wartość, która ma być zwrócona jeśli klucz nie zostanie znaleziony.  
+Jeśli nie jesteśmy pewni, czy słownik posiada dany klucz, jako drugi parametr do get możemy podać wartość, która ma być zwrócona jeśli klucz nie zostanie znaleziony.  
 
 ```python
 print(jimmy.get('height', 180))
@@ -234,5 +234,5 @@ Cool stuff! 🤖
 
 ## Podsumowanie
 
-Gratulacje! Dzisiaj dowiedziałeś się jak używać słowników, oraz stosować je w praktyce do pracy z danymi ☝️
+Gratulacje! Dzisiaj dowiedziałeś się jak używać słowników oraz stosować je w praktyce do pracy z danymi ☝️
 Jeśli intersuje cię bardziej tematyka słowników polecam talk Raymond'a Hettinger'a na temat słowników **👉 [Modern Dictionaries by Raymond Hettinger](https://www.youtube.com/watch?v=p33CVV29OG8)**  
